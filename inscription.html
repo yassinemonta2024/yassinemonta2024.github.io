@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mesStyles.css'>
+    <script src='controle.js'></script>
+</head>
+<body>
+    <form action="inscription.php" method="post" onsubmit="return verif1()" id="f1">
+        <h3 id="titre3">Inscription d'un(e) assuré(e)</h3>
+        <table>
+            <tr>
+                <td>Matricule : </td>
+                <td><input type="text" name="matricule" id="matricule"></td>
+            </tr>
+            <tr>
+                <td>NCIN : </td>
+                <td><input type="text" name="cin" id="cin"></td>
+            </tr>
+            <tr>
+                <td>Nom : </td>
+                <td><input type="text" name="nom" id="nom"></td>
+            </tr>
+            <tr>
+                <td>Prénom : </td>
+                <td><input type="text" name="pre" id="pre"></td>
+            </tr>
+            <tr>
+                <td>Etat Civil : </td>
+                <td><input type="radio" name="etat" id="e1" value="C">Célibataire 
+                <input type="radio" name="etat" id="e2" value="M">Marié(e) 
+                <input type="radio" name="etat" id="e3" value="D">Divorsé(e) 
+                </td>
+            </tr>
+            <tr>
+                <td>Nombre d'enfants assurés : </td>
+                <td><input type="number" name="nbe" id="nbe" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Type d'assurance : </td>
+                <td><select name="type" id="type">
+                    <option value="0">Choisir le type d'assurance</option>
+                    <option value="1">Santé publique</option>
+                    <option value="2">Médecin de famille</option>
+                    <option value="3">Remboursement des dépenses</option>
+                </select></td>
+            </tr>
+        </table>
+        <div id="bl1">
+            <input type="submit" name="" id="" value="Inscrire">
+            <input type="reset" name="" id="" value="Annuler">
+        </div>
+
+    </form>
+</body>
+</html>
