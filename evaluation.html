@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mesStyles.css">
+    <script src="controle.js"></script>
+</head>
+<body>
+    <form action="evaluation.php" method="post" name="f2" id="f2" onsubmit="return verif2()">
+        <fieldset>
+            <legend>Evaluation d'un modèle</legend>
+            <label for="ident">N° Permis :</label>
+            <input type="text" name="permis" id="permis">
+
+            <label for="modele">Modèle testé :</label>
+            <select name="modele" id="modele">
+                <option value="0">Choisir un modèle</option>
+                <option value="15">WALLYS IRIS</option>
+                <option value="26">WALLYS 619</option>
+                <option value="38">WALLYS 216</option>
+            </select><br>
+
+            <label>Notes attribuées :</label><br><br>
+
+            <div id="bloc1">
+                <label>Sécurité :</label><input type="text" name="sec" id="sec" size="5">
+                <label>Conduite :</label><input type="text" name="cond" id="cond" size="5">
+                <label>Confort :</label><input type="text" name="conf" id="conf" size="5">
+            </div>
+
+            <p>Je ne suis pas un robot : <input type="checkbox" name="robot" id="robot"></p>
+
+            <input type="reset" name="bt3" id="bt3" value="Annuler">
+            <input type="submit" name="bt4" id="bt4" value="Valider">
+        </fieldset>
+    </form>
+</body>
+</html>

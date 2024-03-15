@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enregistrement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mesStyles.css">
+    <script src="controles.js"></script>
+</head>
+<body>
+    <form action="enregistrement.php" method="post" onsubmit="return verif1()">
+        <fieldset>
+            <legend>Enregistrement d'un testeur</legend>
+            <table>
+                <tr>
+                    <td><label for="numPermis">N° Permis</label></td>
+                    <td><input type="text" name="numPermis" id="numPermis"></td>
+                </tr>
+                <tr>
+                    <td><label for="nomPilote">Nom</label></td>
+                    <td><input type="text" name="nomPilote" id="nomPilote"></td>
+                </tr>
+                <tr>
+                    <td><label for="prenomPilote">Prénom</label></td>
+                    <td><input type="text" name="prenomPilote" id="prenomPilote"></td>
+                </tr>
+                <tr>
+                    <td><label for="rad">Genre</label></td>
+                    <td>
+                        <input type="radio" name="rad" id="radF" value="F">Féminin
+                        <input type="radio" name="rad" id="radM" value="M">Masculin
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ville" id="lab">Ville</label></td>
+                    <td>
+                        <select name="ville" id="ville">
+                            <option value="0">Choisir une ville</option>
+                            <option value="1">Gafsa</option>
+                            <option value="2">Kef</option>
+                            <option value="3">Sousse</option>
+                            <option value="4">Tunis</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="reset" name="bt1" id="bt1" value="Annuler">
+                        <input type="submit" name="bt2" id="bt2" value="Ajouter">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
